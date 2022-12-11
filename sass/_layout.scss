@@ -1,0 +1,76 @@
+.header-container {
+  background-image: url("https://fs-thb02.getcourse.ru/fileservice/file/thumbnail/h/5c8bd55adbfbc382dd293ad02ff97b5c.png/s/s1200x/a/596882/sc/434");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display:inline-block;
+
+  @media only screen and (max-width: 75em) {
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+  }
+}
+
+.header {
+  max-width: 100rem;
+  height: 100%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+
+  &-top {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 42.5em) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &-text {
+    margin: 0 auto;
+    max-width: 120rem;
+    height: 25rem;
+
+    @media only screen and (max-width: 75em) {
+      margin: 6rem 3rem;
+      height: 32rem;
+      background-color: rgba($color-white, .8);
+      border-radius: 2rem;
+      padding: 2rem;
+    }
+  }
+
+  &-programms {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 31.25em) {
+      flex-direction: column;
+    }
+
+    &__btn {
+      width: 30%;
+      margin-right: 3rem;
+
+      @media only screen and (max-width: 31.25em) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+      }
+    }
+
+    &__text {
+      display: block;
+    }
+  }
+
+
+}
